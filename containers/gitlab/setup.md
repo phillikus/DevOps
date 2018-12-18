@@ -17,3 +17,4 @@
 
    - choose executor and setup ssh (directory: /home/gitlab-runner)
    - add builds_dir = "/builds" to /srv/gitlab-runner/config.toml ([[runners]] section)
+   - add clone_url = "http://192.168.0.35:30080" to /srv/gitlab-runner/config.toml ([[runners]] section

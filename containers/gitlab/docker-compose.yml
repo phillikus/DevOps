@@ -24,11 +24,8 @@ services:
           external_url 'http://gitlab.example.com:30080'
           gitlab_rails['gitlab_shell_ssh_port'] = 30022
       ports:
-        # both ports must match the port from external_url above
         - "30080:30080"
-        # the mapped port must match ssh_port specified above.
         - "30022:30022"
-# the following are hints on what volumes to mount if you want to persist data
       volumes:
          - '/var/run/docker.sock:/var/run/docker.sock'
          - '/srv/gitlab/config:/etc/gitlab'
@@ -42,7 +39,6 @@ services:
         - POSTGRES_USER=gitlab
         - POSTGRES_PASSWORD=gitlab
         - POSTGRES_DB=gitlabhq_production
-# the following are hints on what volumes to mount if you want to persist data
       volumes:
         - '/srv/postgresql:/var/lib/postgresql:rw'
 

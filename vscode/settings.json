@@ -1,0 +1,12 @@
+{
+    "go.gopath": "/home/philipp/go",    
+    "go.formatTool": "gofmt",
+    "go.autocompleteUnimportedPackages": true
+    "rust.mode": "legacy",
+    "rust.rustup": {
+        "toolchain": "stable-x86_64-unknown-linux-gnu"
+    },
+    "lldb.executable": "lldb-5.0",
+    "keyboard.dispatch": "keyCode",
+    "workbench.editor.enablePreview": false
+}
